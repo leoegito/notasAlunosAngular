@@ -1,0 +1,60 @@
+form {
+    width: 50%;
+    margin: 30px auto;
+    border: solid 1px #ccc;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+input[type="button"] {
+    background-color: #09aa03;
+    border: solid 1px #09aa04;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    border: solid 1px #ccc;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+th, tr, td{
+    padding: auto;
+    text-align: center;
+}
+
+button{
+    margin: 2px;
+    width: 100px;
+}
+
+.btn-success{
+    background-color: #09aa03;
+    border: solid 1px #09aa04;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-danger{
+    background-color: #5f0404;
+    border: solid 1px #aa0303;
+    color: #fff;
+    border-radius: 5px;
+}

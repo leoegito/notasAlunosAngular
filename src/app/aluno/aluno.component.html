@@ -1,0 +1,45 @@
+<form class="row justify-content-center">
+    <div class="col-sm-3 justify-content-center">
+        <input class="form-control" type="text" name="nomeAluno" id="" placeholder="Nome" [(ngModel)]="aluno.nomeAluno">
+        
+    </div>
+    <div class="col-sm-3 justify-content-center">
+        <input class="form-control" type="number" name="notaP1" id="" placeholder="Nota P1" [(ngModel)]="aluno.notaP1" max="10.0" min="0" step="0.1">
+
+    </div>
+    <div class="col-sm-3 justify-content-center">
+
+        <input class="form-control" type="number" name="notaP2" id="" placeholder="Nota P2" [(ngModel)]="aluno.notaP2" max="10.0" min="0" step="0.1">
+    </div>
+    <div class="col-auto justify-content-center">
+
+        <input class="form-control" type="button" value="Editar" *ngIf="id>=0" (click)="atualizar()">
+        <input class="form-control" type="button" value="Cadastrar" *ngIf="id<0" (click)="cadastrar()">
+    </div>
+</form>
+<div class="table-responsive">
+    <table class="table align-middle">
+        <tr>
+            <th scope="col">Número</th>
+            <th scope="col">Aluno</th>
+            <th scope="col">Nota P1</th>
+            <th scope="col">Nota P2</th>
+            <th scope="col">Média</th>
+            <th scope="col">Condição</th>
+            <th scope="col">Ações</th>
+        </tr>
+
+        <tr *ngFor="let aluno of listAlunos; let id=index">
+            <th scope="row">{{ id + 1 }}</th>
+            <td>{{ aluno.nomeAluno }}</td>
+            <td>{{ aluno.notaP1 | number:'1.0-1' }}</td>
+            <td>{{ aluno.notaP2 | number:'1.0-1' }}</td>
+            <td>{{ aluno.media | number:'1.0-1' }}</td>
+            <td>{{ aluno.condicao }}</td>
+            <td>
+                <button class="btn btn-success table-dark" (click)="editar(id)">Editar</button>
+                <button class="btn btn-danger table-dark" (click)="deletar(id)">Excluir</button>
+            </td>
+        </tr>
+    </table>
+<</div>
