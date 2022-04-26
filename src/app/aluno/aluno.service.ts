@@ -12,14 +12,14 @@ export class AlunoService {
     }
 
     private listAlunos: Aluno[] = [
-        new Aluno("Leonardo", 10.0, 10.0),
-        new Aluno("Maryna", 9.5, 8.5),
-        new Aluno("Pedro", 10.0, 9.0),
-        new Aluno("Joca", 10.0, 5.0),
-        new Aluno("Heger", 9.0, 9.2),
-        new Aluno("Euler", 10.0, 10.0),
-        new Aluno("Vladimir", 5.0, 4.0),
-        new Aluno("Datena", 3.0, 2.7)
+        new Aluno("Isaac", 10.0, 10.0),
+        new Aluno("Ada", 9.5, 9.1),
+        new Aluno("Euclides", 10.0, 9.0),
+        new Aluno("Arquimedes", 10.0, 5.5),
+        new Aluno("Alan", 9.0, 9.2),
+        new Aluno("Euler", 10.0, 9.8),
+        new Aluno("Fulano", 5.0, 4.0),
+        new Aluno("Beltrano", 3.0, 2.7)
     ];
 
 
