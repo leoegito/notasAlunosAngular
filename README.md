@@ -1,27 +1,30 @@
-# DesafioAngular
+# Desafio Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
+## Consulta, Cadastro e Exclusão de Alunos - Sistema de Notas
 
-## Development server
+<p>Criação de uma página única para cadastro e consulta de Alunos e suas notas.</p>
+<p>A tabela de consulta está populada com dados fictícios iniciais. Caso queira começar com a tabela vazia, apague os registros pré-cadastrados em aluno.service.ts.</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 📋 Formulário de cadastro:
+* Nome do Aluno
+* Nota P1 do Aluno
+* Nota P2 do Aluno
 
-## Code scaffolding
+### 📋 Tabela de Consulta:
+* Nome do Aluno
+* Nota P1 do Aluno
+* Nota P2 do Aluno
+* Média do Aluno
+* Situação do Aluno (Aprovado ou Reprovado)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Projeto construído com:
 
-## Build
+* [Angular CLI](https://github.com/angular/angular-cli) versão 12.2.3.
+* [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) - versão 5.1.3
+* Relacionados: javascript, typescript, npm package manager, node
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Para começar:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Após clonar o projeto, abra o terminal e navegue até sua respectiva pasta
+* Rode o comando `npm install` para instalar as dependências do projeto
+* Rode o comando `ng serve` para iniciar o servidor em modo de desenvolvimento. A aplicação será atualizada automaticamente no caso de alteração do código-fonte. 
